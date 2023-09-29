@@ -6,9 +6,11 @@
 #X obj 880 710 snapshot~;
 #X obj 739 695 *~;
 #X obj 846 475 bng 25 250 50 0 empty empty empty 17 7 0 10 #191919 #e1e1e1 #e1e1e1;
-#X obj 896 661 metro 20;
+#X obj 999 659 metro 20;
 #X obj 826 575 adsr~ 1000 1000 0 1000;
 #X text 879 478 we should be able to replace this 'bang' button (the little square at the top w/ circle in it) with an actual midi listener and trigger the envelope;
+#X obj 1019 579 loadbang, f 11;
+#X obj 1019 608 tgl 27 0 empty empty empty 17 7 0 10 #191919 #e1e1e1 #e1e1e1 0 1;
 #X connect 0 0 1 0 empty;
 #X connect 1 0 5 0 empty;
 #X connect 4 0 3 0 empty;
@@ -17,3 +19,5 @@
 #X connect 7 0 4 0 empty;
 #X connect 8 0 4 0 empty;
 #X connect 8 0 5 1 empty;
+#X connect 10 0 11 0 empty;
+#X connect 11 0 7 0 empty;
